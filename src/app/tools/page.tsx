@@ -33,7 +33,7 @@ const tools = [
     },
     {
         name: "Core",
-        link: "#",
+        link: "/tools/launch-pad",
         icon: Badge,
         description: "The next-gen NFT standard, storing all data on-chain for 85% lower costs—great for modern collections.",
         category: "Minting",
@@ -73,7 +73,7 @@ const tools = [
     },
     {
         name: "MPL-Hybrid",
-        link: "#",
+        link: "/tools/launch-pad",
         icon: Puzzle,
         description: "Blends fungible and non-fungible traits, offering dynamic assets for gaming or DeFi use cases.",
         category: "Advanced Assets",

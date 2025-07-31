@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Rocket, Menu, X, Wrench, BarChart3, Store, User, Users } from "lucide-react"
 import { useRouter, usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui"
 
 const navItems = [
     {
@@ -60,12 +61,13 @@ const NavBar: React.FC = () => {
     }, [])
 
     const WalletButton = () => (
-        <Button
-            variant="outline"
-            className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white border-purple-500 hover:border-purple-400 font-semibold transition-all duration-200 shadow-lg hover:shadow-purple-500/25"
-        >
-            Connect Wallet
-        </Button>
+        <WalletMultiButton />
+        // <Button
+        //     variant="outline"
+        //     className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white border-purple-500 hover:border-purple-400 font-semibold transition-all duration-200 shadow-lg hover:shadow-purple-500/25"
+        // >
+        //     Connect Wallet
+        // </Button>
     )
 
     return (
